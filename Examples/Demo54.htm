@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Bootstrap Demo</title>
+	<meta name="viewport" content="width=device-width, initial- scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/jquery2-2-0.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+	$(function(){
+		$("[data-toggle='popover']").popover({trigger:'hover'});
+		$("#btn3").popover({html:true, trigger:'hover'});
+	})
+	</script>
+</head>
+<body>
+	
+	
+	<div class="container">
+	<h1>Popover Demo</h1>
+	<br><br>
+	
+	<br><br>
+	<button type="button" class="btn btn-default" data-toggle="popover" title="Popover title" data-content="This is popover content" data-container="body">Popover button</button>
+	
+	<button type="button" class="btn btn-primary" data-placement="right" data-toggle="popover" title="Title" data-content="Popover on right" data-container="body">Popover button</button>
+	
+	<button type="button" class="btn btn-info" data-placement="top" id="btn3" title="<p style='color:aqua;font-size:24pt'>Title</p>" data-content="<span style='font-size:20pt;font-family:Calibri'>Popover on top</span>" data-container="body">Popover button</button>
+	
+</div>
+	
+</body>
+</html>

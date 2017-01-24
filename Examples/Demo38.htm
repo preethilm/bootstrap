@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Bootstrap Demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, userscalable=no">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/jquery2-2-0.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+	$(function(){
+		$("#paraTime").html(new Date().toLocaleTimeString());
+	})
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h3>Navbar Demo</h3>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">My Inc.</a>
+			</div>
+			<div>
+				<p class="navbar-text" id="paraTime"></p>
+			</div>
+		</nav>
+		
+	</div>
+</body>
+</html>

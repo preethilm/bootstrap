@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Bootstrap Demo</title>
+	<meta name="viewport" content="width=device-width, initial- scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/jquery2-2-0.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+	$(function(){
+		$("#btn1").on("click", function(){
+			$("#myTabs a[href='#c']").tab('show');
+		});
+	})
+	</script>
+</head>
+<body>
+	
+	
+	<div class="container">
+	<h1>Tab Demo</h1>
+	
+	<div>
+		<ul id="myTabs" class="nav nav-tabs">
+			<li class="active"><a href="#a" data-toggle="tab">Tab 1</a></li>
+			<li><a href="#b" data-toggle="tab">Tab 2</a></li>
+			<li><a href="#c" data-toggle="tab">Tab 3</a></li>
+		</ul>
+    </div>
+	<br>
+	<div id="tabContent" class="tab-content">
+	<div class="tab-pane fade in active" id="a">Content Panel linked to the first tab</div>
+	<div class="tab-pane fade" id="b">Content Panel linked to the second tab</div>
+	<div class="tab-pane fade" id="c">Content Panel linked to the third tab</div>
+
+</div>
+	<br><br><br>
+		<button type="button" class="btn btn-default" id="btn1">Activate Tab 3</button>
+</div>
+	
+</body>
+</html>

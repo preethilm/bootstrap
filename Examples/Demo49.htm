@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Bootstrap Demo</title>
+	<meta name="viewport" content="width=device-width, initial- scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/jquery2-2-0.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+	$(function(){
+		//$("#myDialog").modal({backdrop:"static"})
+		$("#btnSubmit").on("click", function(){
+			$("#myDialog").modal('hide');
+			location.href="http://www.bing.com";
+		})
+	})
+	</script>
+</head>
+<body>
+	
+	
+	<div class="container">
+	<h1>Modal Demo</h1>
+	
+	<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myDialog">
+		Show Dialog
+	</button>
+	
+	<div class="modal fade" id="myDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">MyDialog</h4>
+				</div>
+				<div class="modal-body">
+					This is a modal dialog
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">
+						Close</button>
+					<button type="button" class="btn btn-primary" id="btnSubmit">
+						Submit
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	</div>
+	
+</body>
+</html>
